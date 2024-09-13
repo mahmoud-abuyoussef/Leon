@@ -1,4 +1,6 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 :root {
@@ -97,8 +99,6 @@ header nav ul {
   top: calc(100% + 15px);
   right: 0;
   min-width: 180px;
-  padding: 0;
-  margin: 0;
   list-style-type: none;
   background-color: var(--section-background);
   display: none;
@@ -143,7 +143,6 @@ section.hero .intro-text {
   max-width: 100%;
 }
 section.hero .intro-text h1 {
-  margin: 0;
   font-size: 50px;
   font-weight: bold;
   color: var(--main-color);
@@ -257,9 +256,6 @@ section.portfolio .portfolio-content .card img {
 }
 section.portfolio .portfolio-content .card .card-info {
   padding: 20px;
-}
-section.portfolio .portfolio-content .card .card-info h3 {
-  margin: 0;
 }
 section.portfolio .portfolio-content .card .card-info p {
   color: #777;
@@ -376,6 +372,8 @@ section.contact .contact-info .label {
 }
 section.contact .contact-info .link {
   display: block;
+  width: fit-content;
+  margin: auto;
   font-size: 35px;
   font-weight: 800;
   text-decoration: none;
@@ -397,4 +395,17 @@ section.contact .contact-info .social a i {
   section.contact .contact-info .link {
     font-size: 25px;
   }
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+footer p {
+  color: #fff;
+}
+footer p .site-name {
+  font-weight: bold;
+  color: var(--main-color);
 }
