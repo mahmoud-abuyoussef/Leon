@@ -4,6 +4,9 @@
 :root {
   --main-color: #10cab7;
   --secondary-color: #2c4755;
+  scroll-behavior: smooth;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
 }
 body {
   font-family: "Work Sans", sans-serif;
@@ -97,7 +100,7 @@ header nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  background-color: #f6f6f6;
+  background-color: var(--section-background);
   display: none;
   z-index: 1;
 }
@@ -110,7 +113,7 @@ header nav ul::before {
   top: -20px;
   right: 5px;
   border: 10px solid transparent;
-  border-bottom-color: #f6f6f6;
+  border-bottom-color: var(--section-background);
 }
 header nav ul li a {
   display: block;
@@ -151,9 +154,9 @@ section.hero .intro-text p {
 }
 
 section.features {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f6f6f6;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
 }
 section.features .container {
   display: grid;
@@ -178,8 +181,8 @@ section.features .feat p {
 }
 
 section.services {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 section.services .services-content {
   display: grid;
@@ -233,4 +236,51 @@ section.services .services-content .image img {
   .image-column {
     display: none;
   }
+}
+
+section.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+section.portfolio .portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 80px;
+}
+section.portfolio .portfolio-content .card {
+  background-color: #fff;
+}
+section.portfolio .portfolio-content .card img {
+  max-width: 100%;
+}
+section.portfolio .portfolio-content .card .card-info {
+  padding: 20px;
+}
+section.portfolio .portfolio-content .card .card-info h3 {
+  margin: 0;
+}
+section.portfolio .portfolio-content .card .card-info p {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+section.portfolio .show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.portfolio .show-more a {
+  padding: 10px;
+  width: 150px;
+  margin-top: 40px;
+  text-decoration: none;
+  border: 2px solid black;
+  color: black;
+  font-weight: bold;
+}
+section.portfolio .show-more a:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
 }
