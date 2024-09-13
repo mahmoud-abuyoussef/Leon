@@ -9,6 +9,7 @@
   --section-padding: 60px;
   --section-background: #f6f6f6;
   --transition-duration: 0.3s;
+  --text-color: #777;
 }
 html {
   scroll-behavior: smooth;
@@ -43,7 +44,6 @@ body {
 }
 
 .special-heading {
-  margin: 0;
   color: #ebeced;
   font-size: 100px;
   font-weight: 800;
@@ -180,7 +180,7 @@ section.features .feat h3 {
 }
 section.features .feat p {
   line-height: 1.8;
-  color: #777;
+  color: var(--text-color);
   font-size: 17px;
 }
 
@@ -207,7 +207,7 @@ section.services .services-content .service .service-info h3 {
   margin: 0 0 20px;
 }
 section.services .services-content .service .service-info p {
-  color: #777;
+  color: var(--text-color);
   font-weight: 300;
   line-height: 1.6;
 }
@@ -259,7 +259,7 @@ section.portfolio .portfolio-content .card .card-info {
   padding: 20px;
 }
 section.portfolio .portfolio-content .card .card-info p {
-  color: #777;
+  color: var(--text-color);
   line-height: 1.6;
   margin-bottom: 0;
 }
@@ -351,7 +351,7 @@ section.about .about-content .about-info hr {
 }
 section.about .about-content .about-info p:last-of-type {
   line-height: 2;
-  color: #777;
+  color: var(--text-color);
 }
 
 section.contact {
